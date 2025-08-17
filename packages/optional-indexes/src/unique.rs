@@ -70,14 +70,11 @@ where
     where
         T: 'c,
     {
-        let iter = self
-            .idx_map
-            .range_raw(store, min, max, order)
-            .map(|res| {
-                let (_, item) = res?;
-                let key = PK::from_slice(&item.pk)?;
-                Ok((key, item.value))
-            });
+        let iter = self.idx_map.range_raw(store, min, max, order).map(|res| {
+            let (_, item) = res?;
+            let key = PK::from_slice(&item.pk)?;
+            Ok((key, item.value))
+        });
         Box::new(iter)
     }
 }
