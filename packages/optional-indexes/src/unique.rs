@@ -94,7 +94,7 @@ where
                 if opt.is_some() {
                     // TODO: return a more informative error message,
                     // e.g. what the index and associated primary keys are
-                    return Err(StdError::generic_err("Violates unique constraint on index"));
+                    return Err(StdError::msg("Violates unique constraint on index"));
                 }
                 Ok(UniqueRef {
                     pk: pk.into(),
