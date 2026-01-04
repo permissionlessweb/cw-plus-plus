@@ -215,10 +215,12 @@ checksum = "c2459377285ad874054d797f3ccebf984978aa39129f6eafde5cdc8315b612f8"
 [[package]]
 name = "cosmwasm-core"
 version = "3.0.3-dev"
+source = "git+https://github.com/permissionlessweb/cosmwasm?branch=mvp#1b9fcc7492eda607a9c2773770ca347ad9bd7704"
 
 [[package]]
 name = "cosmwasm-crypto"
 version = "3.0.3-dev"
+source = "git+https://github.com/permissionlessweb/cosmwasm?branch=mvp#1b9fcc7492eda607a9c2773770ca347ad9bd7704"
 dependencies = [
  "ark-bls12-381",
  "ark-ec",
@@ -242,6 +244,7 @@ dependencies = [
 [[package]]
 name = "cosmwasm-derive"
 version = "3.0.3-dev"
+source = "git+https://github.com/permissionlessweb/cosmwasm?branch=mvp#1b9fcc7492eda607a9c2773770ca347ad9bd7704"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -251,6 +254,7 @@ dependencies = [
 [[package]]
 name = "cosmwasm-schema"
 version = "3.0.3-dev"
+source = "git+https://github.com/permissionlessweb/cosmwasm?branch=mvp#1b9fcc7492eda607a9c2773770ca347ad9bd7704"
 dependencies = [
  "cosmwasm-schema-derive",
  "cw-schema",
@@ -263,6 +267,7 @@ dependencies = [
 [[package]]
 name = "cosmwasm-schema-derive"
 version = "3.0.3-dev"
+source = "git+https://github.com/permissionlessweb/cosmwasm?branch=mvp#1b9fcc7492eda607a9c2773770ca347ad9bd7704"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -272,6 +277,7 @@ dependencies = [
 [[package]]
 name = "cosmwasm-std"
 version = "3.0.3-dev"
+source = "git+https://github.com/permissionlessweb/cosmwasm?branch=mvp#1b9fcc7492eda607a9c2773770ca347ad9bd7704"
 dependencies = [
  "base64",
  "bech32",
@@ -433,6 +439,7 @@ dependencies = [
 [[package]]
 name = "cw-schema"
 version = "3.0.3-dev"
+source = "git+https://github.com/permissionlessweb/cosmwasm?branch=mvp#1b9fcc7492eda607a9c2773770ca347ad9bd7704"
 dependencies = [
  "cw-schema-derive",
  "indexmap",
@@ -446,6 +453,7 @@ dependencies = [
 [[package]]
 name = "cw-schema-derive"
 version = "3.0.3-dev"
+source = "git+https://github.com/permissionlessweb/cosmwasm?branch=mvp#1b9fcc7492eda607a9c2773770ca347ad9bd7704"
 dependencies = [
  "heck",
  "itertools",
@@ -458,6 +466,7 @@ dependencies = [
 [[package]]
 name = "cw-storage-plus"
 version = "3.0.1"
+source = "git+https://github.com/permissionlessweb/cw-storage-plus?branch=mvp#9cc69e11726116f5d709fde94e05100a0e592fa7"
 dependencies = [
  "cosmwasm-std",
  "schemars 0.8.22",
@@ -467,6 +476,7 @@ dependencies = [
 [[package]]
 name = "cw-utils"
 version = "3.0.0"
+source = "git+https://github.com/permissionlessweb/cw-minus?branch=mvp#afd7e90a4d4ede7b4c00f382b6790cb33e4f2c75"
 dependencies = [
  "cosmwasm-schema",
  "cosmwasm-std",
