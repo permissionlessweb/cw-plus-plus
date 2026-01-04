@@ -11,14 +11,20 @@ version    = "3.0.1"
 keywords   = ["cosmos", "cosmwasm"]
 
 [workspace.dependencies]
-cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp",features = ["cosmwasm_1_4", "cosmwasm_2_0"] }
-cosmwasm-schema = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp", package = "cosmwasm-schema" }
-cw-storage-plus    = { git = "https://github.com/permissionlessweb/cw-storage-plus", branch = "mvp" }
+#cw-utils         = { git = "https://github.com/permissionlessweb/cw-minus", branch = "mvp", package = "cw-utils" }
+#cw-storage-plus  = { git = "https://github.com/permissionlessweb/cw-storage-plus", branch = "mvp" }
+#cosmwasm-std     = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp",features = ["cosmwasm_1_4", "cosmwasm_2_0"] }
+#cosmwasm-schema  = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp", package = "cosmwasm-schema" }
 cw-address-like   = { version = "3.0.1", path = "./packages/address-like" }
 cw-ownable-derive = { version = "3.0.1", path = "./packages/ownable/derive" }
-cw-utils          = { git = "https://github.com/permissionlessweb/cw-minus", branch = "mvp", package = "cw-utils" }
 proc-macro2       = "1"
 quote             = "1"
 serde             = { version = "1", default-features = false }
 syn               = "1"
 thiserror         = "1"
+
+# local dependencies paths
+cosmwasm-schema   = { path = "../zk-cosmwasm/mvp/packages/schema" }
+cosmwasm-std      = { path = "../zk-cosmwasm/mvp/packages/std" }
+cw-storage-plus   = { path = "../zk-storage-plus" }
+cw-utils          = { path = "../zk-cw-minus/packages/cw-utils" }
