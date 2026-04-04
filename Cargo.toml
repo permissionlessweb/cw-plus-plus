@@ -19,9 +19,9 @@ serde             = { version = "1", default-features = false }
 syn               = "1"
 thiserror         = "1"
 
-cosmwasm-std      = "3.0.1"
-cosmwasm-schema   = "3.0.1"
-cw-storage-plus   = "3.0.0"
+cosmwasm-std      = "3.0.4"
+cosmwasm-schema   = "3.0.4"
+cw-storage-plus   = "3.0.1"
 cw-utils          = { path = "../cw-minus/packages/cw-utils" }
 
 # ZK fork paths (uncomment for zk-cw development):
