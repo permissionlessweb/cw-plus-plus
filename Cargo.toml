@@ -11,14 +11,21 @@ version    = "3.0.1"
 keywords   = ["cosmos", "cosmwasm"]
 
 [workspace.dependencies]
-cosmwasm-schema   = "3.0.1"
-cosmwasm-std      = "3.0.1"
-cw-address-like   = { version = "3.0.1", path = "./packages/address-like" }
+cw-address-like = { path = "./packages/address-like" }
 cw-ownable-derive = { version = "3.0.1", path = "./packages/ownable/derive" }
-cw-storage-plus   = "3.0.0"
-cw-utils          = "3.0.0"
 proc-macro2       = "1"
 quote             = "1"
 serde             = { version = "1", default-features = false }
 syn               = "1"
 thiserror         = "1"
+
+cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp" }
+cosmwasm-schema = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp" }
+cw-storage-plus = { git = "https://github.com/permissionlessweb/cw-storage-plus", branch = "mvp" }
+cw-utils = { git = "https://github.com/permissionlessweb/cw-minus", branch = "main" }
+
+# ZK fork paths (uncomment for zk-cw development):
+# cosmwasm-std    = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp", features = ["cosmwasm_1_4", "cosmwasm_2_0"] }
+# cosmwasm-schema = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp", package = "cosmwasm-schema" }
+# cw-storage-plus = { git = "https://github.com/permissionlessweb/cw-storage-plus", branch = "mvp" }
+# cw-utils        = { path = "../zk-cw-minus/packages/cw-utils" }
