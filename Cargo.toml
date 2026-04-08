@@ -19,7 +19,7 @@ serde             = { version = "1", default-features = false }
 syn               = "1"
 thiserror         = "1"
 
-cosmwasm-std = { path = "../ZK/cw/zk-cosmwasm/packages/std" }
-cosmwasm-schema = { path = "../ZK/cw/zk-cosmwasm/packages/schema" }
-cw-storage-plus = { path = "../ZK/cw/zk-storage-plus" }
-cw-utils = { path = "../ZK/cw/zk-cw-minus/packages/cw-utils" }
+cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "zk-mvp" }
+cosmwasm-schema = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "zk-mvp" }
+cw-storage-plus = { git = "https://github.com/permissionlessweb/cw-storage-plus", branch = "zk-mvp" }
+cw-utils = { git = "https://github.com/permissionlessweb/cw-minus", branch = "zk-mvp" }
