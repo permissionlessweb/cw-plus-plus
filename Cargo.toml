@@ -11,7 +11,7 @@ version    = "3.0.1"
 keywords   = ["cosmos", "cosmwasm"]
 
 [workspace.dependencies]
-cw-address-like = { git = "https://github.com/permissionlessweb/cw-plus-plus", branch = "zk-mvp" }
+cw-address-like = { path = "packages/address-like" }
 cw-ownable-derive = { version = "3.0.1", path = "./packages/ownable/derive" }
 proc-macro2       = "1"
 quote             = "1"
@@ -19,7 +19,7 @@ serde             = { version = "1", default-features = false }
 syn               = "1"
 thiserror         = "1"
 
-cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "zk-mvp" }
 cosmwasm-schema = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "zk-mvp" }
+cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "zk-mvp" }
 cw-storage-plus = { git = "https://github.com/permissionlessweb/cw-storage-plus", branch = "zk-mvp" }
 cw-utils = { git = "https://github.com/permissionlessweb/cw-minus", branch = "zk-mvp" }

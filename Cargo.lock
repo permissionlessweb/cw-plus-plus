@@ -383,14 +383,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "cw-address-like"
-version = "3.0.1"
-source = "git+https://github.com/permissionlessweb/cw-plus-plus?branch=zk-mvp#8f772505660ff54c496646b218e7b25b50728479"
-dependencies = [
- "cosmwasm-std",
-]
-
-[[package]]
 name = "cw-item-set"
 version = "3.0.1"
 dependencies = [
@@ -413,7 +405,7 @@ version = "3.0.1"
 dependencies = [
  "cosmwasm-schema",
  "cosmwasm-std",
- "cw-address-like 3.0.1 (git+https://github.com/permissionlessweb/cw-plus-plus?branch=zk-mvp)",
+ "cw-address-like",
  "cw-ownable-derive",
  "cw-storage-plus",
  "cw-utils",
