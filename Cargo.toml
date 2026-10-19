@@ -19,12 +19,22 @@ serde             = { version = "1", default-features = false }
 syn               = "1"
 thiserror         = "1"
 
-cosmwasm-schema = { path = "../cosmwasm/packages/schema" }
-cosmwasm-std = { path = "../cosmwasm/packages/std" }
-cw-storage-plus = { path = "../cw-storage-plus" }
-cw-utils = { path = "../cw-minus/packages/cw-utils" }
+cosmwasm-schema = { git = "https://github.com/permissionlessweb/cosmwasm", rev = "e20646e2d9a9c4f93e993eb0656afa795f6e387a" }
+cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", rev = "e20646e2d9a9c4f93e993eb0656afa795f6e387a" }
+cw-storage-plus = { git = "https://github.com/permissionlessweb/cw-storage-plus", rev = "cf066f8ca57cc30a7cf8f50fca9cf6e18291d71a" }
+cw-utils = { git = "https://github.com/permissionlessweb/cw-minus", rev = "c5c680ddc3d896cc746618d7ad9b93e0f8271461" }
 
 [patch.'https://github.com/permissionlessweb/cw-plus-plus']
 cw-address-like = { path = "packages/address-like" }
 cw-ownable = { path = "packages/ownable" }
 cw-paginate = { path = "packages/paginate" }
+
+[patch.'https://github.com/permissionlessweb/cosmwasm']
+cosmwasm-schema = { path = "../cosmwasm/packages/schema" }
+cosmwasm-std = { path = "../cosmwasm/packages/std" }
+
+[patch.'https://github.com/permissionlessweb/cw-storage-plus']
+cw-storage-plus = { path = "../cw-storage-plus" }
+
+[patch.'https://github.com/permissionlessweb/cw-minus']
+cw-utils = { path = "../cw-minus/packages/cw-utils" }
