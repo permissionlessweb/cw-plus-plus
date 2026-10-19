@@ -11,14 +11,21 @@ version    = "3.0.1"
 keywords   = ["cosmos", "cosmwasm"]
 
 [workspace.dependencies]
-cosmwasm-schema   = "3.0.1"
-cosmwasm-std      = "3.0.1"
-cw-address-like   = { version = "3.0.1", path = "./packages/address-like" }
+cw-address-like = { path = "packages/address-like" }
 cw-ownable-derive = { version = "3.0.1", path = "./packages/ownable/derive" }
-cw-storage-plus   = "3.0.0"
-cw-utils          = "3.0.0"
 proc-macro2       = "1"
 quote             = "1"
 serde             = { version = "1", default-features = false }
 syn               = "1"
 thiserror         = "1"
+
+cosmwasm-schema = { version = "=4.0.0-zk" }
+cosmwasm-std = { version = "=4.0.0-zk" }
+cw-storage-plus = { version = "3.0.1" }
+cw-utils = { version = "3.0.0" }
+[patch.crates-io]
+
+cosmwasm-schema = { path = "../cosmwasm/packages/schema" }
+cosmwasm-std = { path = "../cosmwasm/packages/std" }
+cw-storage-plus = { path = "../cw-storage-plus" }
+cw-utils = { path = "../cw-minus/packages/cw-utils" }
